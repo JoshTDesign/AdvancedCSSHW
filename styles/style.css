@@ -1,0 +1,158 @@
+:root {
+    --white: #ffffff;
+    --ltGray: #afafaf;
+    --dkGray: #4b4b4b;
+    --Grad: linear-gradient(-220deg, #10c3fe, #2442fc, #9023FD);
+    --purple: #9023fd;
+    --lineThick: 4px;
+}
+
+body {
+    background-color:#EAEBEF;
+    height: 1vh;
+}
+
+header {
+    height: 20%;
+    align-items: right;
+    margin: 20px auto 20px auto;
+    width: 96%;
+    box-shadow: 5px 5px 15px var(--ltGray);
+    border-radius:16px;
+    background:var(--Grad);
+    border: 4px solid white;
+}
+
+header h2 {
+    width:200px;
+    border:1px solid gray;
+    color: var(--purple);
+    position: absolute;
+    /* TODO need to position subhead to the right */
+}
+
+header nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height: 100px;
+    background-color: #EAEBEF;
+    border-radius:10px 10px 0 0;
+}
+
+header ul {
+    display:flex;
+    align-items: center;
+    margin-right:50px;
+}
+
+header li {
+    display:inline;
+    padding: 10px 10px 10px 10px;
+    margin:5px;
+    justify-content: flex-end;
+    /* border-bottom: 3px solid rgb(109, 201, 166); */
+    border-radius: 10px;
+    background: linear-gradient(-220deg, white, rgb(206, 206, 206));
+    box-shadow: 5px 5px 10px #afafaf;
+    border: var(--lineThick) solid var(--white);
+    max-height:40px;
+}
+
+header li:active {
+    box-shadow: 
+        inset 5px 5px 10px #afafaf, 
+        inset -5px -5px 10px #ffffff;
+}
+
+header li a:hover {
+    color:#9023fd;
+    transition:color ease .5s;
+}
+
+header a {
+    color:var(--dkGray);
+    text-decoration: none;
+    text-align: center;
+    transition: color ease .5s;
+    font-family: 'Montserrat', sans-serif;
+    font-size 100%;
+}
+
+header h1 {
+    text-align:right;
+    letter-spacing: 2pt;
+    width:300px;
+    padding: 10px;
+    font-size: 220%;
+    border-radius:0 10px 10px 0;
+    color:var(--dkGray);
+    background-color: white;
+    transition: color ease .5s;
+    font-family: 'Bebas Neue', cursive;
+}
+
+header h1:hover {
+
+    color:var(--purple);
+    transition:color ease .5;
+}
+
+main {
+}
+
+section {
+    height: 20%;
+    align-items: right;
+    margin: 20px auto 20px auto;
+    width: 96%;
+    border-radius:16px;
+    border: 4px solid rgb(179, 179, 179);
+    display:flex;
+}
+
+
+.title {
+    min-width: 200px;
+    border-right: 3px solid var(--ltGray);
+    margin: 20px;
+}
+
+.title h2 {
+    color: var(--dkGray);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2pt;
+    text-align: right;
+    margin: 0 5% 0 20%;
+    font-size: 150%;
+}
+
+.content {
+    margin:20px 50px 20px 0;
+    font-family: 'montserrat', sans-serif;
+    font-size: 90%;
+    line-height:150%;
+}
+
+.content p {
+    color: var(--dkGray);
+}
+
+  
+/* Header design is stacked vertically below 800px  */
+@media screen and (max-width: 800px) {
+    header nav {
+      flex-direction:column;
+      height:auto;
+    }
+
+    nav h1 {
+        width:80%;
+        border-radius: 0 0 10px 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        margin: 20px;
+    }
