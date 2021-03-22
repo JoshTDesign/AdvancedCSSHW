@@ -12,17 +12,15 @@
 body {
     background-color:#EAEBEF;
     height: 1vh;
-    width: 100vw;
+    padding: 20px;
 }
 
 /* Header element holds the nav tag, hero image and the subtitle */
 header {
-    height: 20%;
+    height: 250px;
     align-items: right;
-    margin: 20px auto 20px auto;
-    width: 96%;
     box-shadow: 5px 5px 15px var(--ltGray);
-    border-radius:16px;
+    border-radius: 16px;
     background:var(--Grad);
     border: 4px solid white;
     position: relative;
@@ -40,39 +38,53 @@ header h2 {
 }
 
 header nav {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    width:100%;
+    width: 100%;
     height: 50%;
     background-color: #EAEBEF;
-    border-radius:10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 
 nav ul {
-    display:flex;
+    display: flex;
     align-items: center;
-    margin-right:50px;
+    margin-right: 50px;
     padding: 5px 20px 5px 20px;
     background-color: white;
     border-radius: 10px;
 }
 
+section ul {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+section li {
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    margin: 5px;
+    border-bottom: 3px solid var(--dkGray);
+    max-height: 40px;
+}
+
 nav ul {
     display: flex;
-    justify-content: center;
-    margin-right:50px;
+    justify-content: space-around;
+    margin-right: 50px;
     padding: 5px 20px 5px 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 90%;
 }
 
 nav li {
-    display:inline-block;
+    display: inline-block;
     padding: 5px 5px 5px 5px;
     margin: 5px;
     border-bottom: 3px solid var(--dkGray);
-    max-height:40px;
+    max-height: 40px;
 }
 
 header li:active {
@@ -82,32 +94,43 @@ header li:active {
 }
 
 header li:hover > a {
-    color:#9023fd;
+    color: #9023fd;
     transition: color ease .5s;
 }
 
 header li:hover {
-    border-bottom:3px solid var(--purple);
+    border-bottom: 3px solid var(--purple);
     transition: border-bottom ease .5s;
 }
 
 header a {
-    color:var(--dkGray);
+    color: var(--dkGray);
     text-decoration: none;
     text-align: center;
     transition: color ease .5s;
     font-family: 'Montserrat', sans-serif;
-    font-size 100%;
+    font-size: 100%;
+}
+
+footer {
+    height: 100px;
+}
+
+footer h4 {
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+    font-size: 100%;
+    color: var(--dkGray);
 }
 
 header h1 {
     text-align:right;
     letter-spacing: 2pt;
-    width:300px;
+    width: 300px;
     padding: 10px;
     font-size: 220%;
-    border-radius:0 10px 10px 0;
-    color:var(--dkGray);
+    border-radius: 0 10px 10px 0;
+    color: var(--dkGray);
     background-color: white;
     transition: color ease .5s;
     font-family: 'Bebas Neue', cursive;
@@ -115,8 +138,24 @@ header h1 {
 
 header h1:hover {
 
-    color:var(--purple);
-    transition:color ease .5;
+    color: var(--purple);
+    transition: color ease .5;
+}
+
+.contactMe ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactMe li {
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    margin: 5px;
+    border-bottom: 3px solid var(--dkGray);
+    max-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 90%;
 }
 
 a:visited {
@@ -130,14 +169,14 @@ a:link {
 section {
     height: 20%;
     align-items: right;
-    margin: 20px auto 20px auto;
-    width: 96%;
-    border-radius:16px;
+    margin: 20px 0 20px 0;
+    border-radius: 16px;
     border: 4px solid rgb(179, 179, 179);
-    display:flex;
+    display: flex;
+    padding: 20px;
 }
 
-ul.contactInfo {
+.contactMe ul.contactInfo {
     display: flex;
     align-content: center;
 }
@@ -145,7 +184,6 @@ ul.contactInfo {
 .title {
     min-width: 200px;
     border-right: 3px solid var(--ltGray);
-    margin: 20px;
 }
 
 .title h2 {
@@ -158,12 +196,12 @@ ul.contactInfo {
 }
 
 .content {
-    margin:20px 50px 20px 0;
+    margin: 0px 20px 0px 20px;
     font-family: 'montserrat', sans-serif;
     font-size: 90%;
-    line-height:150%;
-    display:flex;
-    flex-wrap:wrap;
+    line-height: 150%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -181,7 +219,7 @@ ul.contactInfo {
 .label h3 {
     color: var(--dkGray);
     font-family: 'Montserrat', sans-serif;
-    transition:color ease .5s;
+    transition: color ease .5s;
 }
 
 .label p {
@@ -193,10 +231,10 @@ ul.contactInfo {
 
 .image {
     /* The width at 49% rather than 50% to make space for the margin between columns */
-    width:49%;  
-    height:250px;
-    overflow:hidden;
-    border:var(--lineThick) solid var(--white);
+    width: 48.5%; 
+    height: 250px;
+    overflow: hidden;
+    border: var(--lineThick) solid var(--white);
     border-radius: 10px;
     margin-bottom: 20px;
     position: relative;
@@ -204,8 +242,8 @@ ul.contactInfo {
 
 img {
     /* This rule keeps the images from scaling when the screensize changes. It also uses an image filter to set the opacity at 30% unless the image is hovered. */
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     filter: opacity(30%);
     transition: filter ease .5s;
@@ -220,16 +258,16 @@ img {
 .wide-image:hover > .label h3, .image:hover > .label h3, 
 .wide-image:hover > .label p, .image:hover > .label p {
     /* This rule turns the h3 text purple when the image div is hovered over */
-    color:#9023fd;
+    color: #9023fd;
     transition: color ease .5s;
 }
 
 .wide-image {
     /* This rule sets the appearance of the project name headings on each image. */
-    width:100%;
-    height:250px;
-    overflow:hidden;
-    border:var(--lineThick) solid var(--white);
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border: var(--lineThick) solid var(--white);
     border-radius: 10px;
     margin-bottom: 20px;
     position: relative;
@@ -238,13 +276,22 @@ img {
 /* Header design is stacked vertically below 800px  */
 /* all .image items are changed to fill 100% of available space and stacked vertically */
 @media screen and (max-width: 800px) {
+    
+    body {
+        width: 92%vw;
+    }
+    
     header nav {
-      flex-direction:column;
-      height:auto;
+      flex-direction: column;
+      height: auto;
+    }
+
+    header h2 {
+        font-size: 100%;
     }
 
     nav h1 {
-        width:90%;
+        width: 90%;
         border-radius: 0 0 10px 10px;
         text-align: center;
     }
@@ -252,18 +299,18 @@ img {
     nav ul {
         margin: 20px;
         width: 90%;
-        padding: 2%;
+        padding: 10px;
     }
 
     .content {
         flex-direction: column;
-        margin: 0%;
         font-size: 90%;
-        line-height:150%;
-        display:flex;
-        flex-wrap:wrap;
+        line-height: 150%;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        padding: 0 20px 20px 20px;
+        padding: 20px 0 20px 0;
+        margin: 0px;
     }
 
     .image {
@@ -300,10 +347,17 @@ img {
         border-bottom: 3px solid var(--ltGray);
     }
 
-    li {
+    .contactInfo li {
         height: 30px;
-        width:auto;
+        width: auto;
         white-space: nowrap;
+        padding-left: 0;
+    }
+
+    .contactInfo ul {
+        margin-left: 20px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     nav a {
