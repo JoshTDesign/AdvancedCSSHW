@@ -1,9 +1,8 @@
 # AdvancedCSSHW\
 
 ## CSS Portfolio Site HW
-
-### The Image Gallery Section
-
+This is my portfolio page for my current projects as a developer. All projects have a placeholder image and currently link to my assignment repository on GitHub, as I progress I hope to add real deployed projects that I can link to.
+My goal was to have a well made HTML and CSS based portfolio page with responsive features and subtle rollover effects on all projects.
 
 ### The Nav Bar section
 * The nav element layout was dealt with using flexbox, with the "display-align:space-between" feature. The links were made with a ul object, then changed to "display:inline" and styled.
@@ -20,5 +19,11 @@
 * Once I had the page looking good as a responsive webpage. I had some issues making the code work in mobile devices. 
 * I had to work on setting the header and nav to fixed heights, rather than % so that the contents don't scale too small at really small screen sizes.
 * I found it better to set the body padding to a fixed px value as well, so that it doesn't scale strangely as the window size changes.
+
+### Screenshots
+https://drive.google.com/file/d/12U5Dh5sza1GsrWVT4CaK0TtcO1xREwdb/view?usp=sharing
+
+### Link to deployed project
+https://joshtdesign.github.io/AdvancedCSSHW/
 
 ### Thanks for reading ;)
