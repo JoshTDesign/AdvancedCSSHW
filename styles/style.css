@@ -347,17 +347,24 @@ img {
         border-bottom: 3px solid var(--ltGray);
     }
 
-    .contactInfo li {
+    section li {
+        display:block;
         height: 30px;
-        width: auto;
+        /* width: auto; */
         white-space: nowrap;
         padding-left: 0;
+        float:left;
     }
 
-    .contactInfo ul {
-        margin-left: 20px;
+    section ul {
+        margin-left: 0;
+        margin-right: auto;
+        margin-top: 20px;
+        display:block;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: left;
+        border-bottom: 0px;
+        justify-content: center;
     }
 
     nav a {
