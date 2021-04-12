@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">    
+    <title>Josh Taylor</title>
+</head>
+<body>
+
+    <!-- Header contains nav element with logo and navigation buttons along with hero art -->
+
+    <header>
+        <nav>
+            <div id="logo" onclick="location.href='./index.html';">
+                <img src="./assets/Images/JT_Logo_horiz-01.svg" width="300px">
+            </div>
+            <ul>
+                <li><a href="./index.html#aboutMe">About Me</a></li>
+                <li><a href="./index.html#work">Work</a></li>
+                <li><a href="#contactMe">Contact Me</a></li>
+                <li><a href="./index.html#resume">Resume</a></li>
+            </ul>
+        </nav>
+        <h2>Front End Developer</h2>
+    </header>
+    
+    <!-- Main contains all sections of content found in the nav bar -->
+    <!-- Within each section, there is a 'title' div and 'content' div-->
+    <main>
+        
+       
+        <!-- Beginning of the 'Work' section  -->
+        <section id="work">
+            <div class="title">
+                <h2>Step One</h2>
+            </div>
+            <div class="content" style="flex-wrap: wrap; max-width: 900px; margin-bottom: 30px; justify-content: space-between">
+                <p>Step One Dance Company is a modern show featured on Holland America Line cruises. Holland America wanted a series of expressive and artistic posters to feature their new show. Bright colors and computer generated elements combined to create these striking images. My role was in developing the logo and working with the dance company photography to create artistic interpretations of the style of the show itself.</p>
+                
+                <!-- Wrapping the entire image component in an 'a' tag allows the whole square to clickable as a link -->
+                <a href="#" class="image" style="height: 700px; width: 100%; margin-top:40px;">
+                    <img src="./assets/Images/StepOne-Poster-Woman - Large.png"  style="filter:opacity(100%); height: 700px" alt="project image" width="100%">
+                </a>
+                <div>
+                <a href="#" class="image" style="height: auto; width: 32%">
+                    <img src="./assets/Images/StepOne_Humanity_Vert-01.png"  style="filter:opacity(100%); height: auto; width: 32%" alt="project image" width="100%">
+                </a>
+                <a href="#" class="image" style="height: auto; width: 32%">
+                    <img src="./assets/Images/StepONE_Resonance_Vert.png"  style="filter:opacity(100%); height: auto; width: 32%" alt="project image" width="100%">
+                </a>
+                <a href="#" class="image" style="height: auto; width: 32%">
+                    <img src="./assets/Images/Asset 2@4x.png"  style="filter:opacity(100%); height: auto; width: 32%" alt="project image" width="100%">
+                </a>
+                </div>
+              
+            </div>
+        </section>
+        
+       
+       
+       
+         <!-- Beginning of the 'Contact me' section  -->
+         <section id="contactMe">
+            <div class="title"><h2>Contact Me</h2></div>
+                <ul class="contactInfo">
+                    <li><p>253.653.7120</p></li>
+                    <li><p>josh@joshtaylordesign.com</p></li>
+                    <li><a href="https://github.com/JoshTDesign" target="blank">GitHub</a>
+                    <li><a href="https://codepen.io/J-T-D" target="blank">CodePen</a>
+                    <li><a href="https://www.linkedin.com/in/josh-taylor-738bb218/" target="blank">LinkedIn</a></li>
+                </ul>
+            <div class="content"></div>
+        </section>
+    </main>
+
+    <footer>
+        <h4>Made with <span style="color:#9023fd">❤</span> by <img src="assets/Images/JT_icon_small-02.svg"></h4>
+    </footer>
+
+
+</body>
+</html>

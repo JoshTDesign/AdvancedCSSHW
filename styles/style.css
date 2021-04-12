@@ -1,4 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
 /* This rule sets the universal variables for the css code */
 :root {
     --white: #ffffff;
@@ -46,6 +49,10 @@ header nav {
     border-radius: 10px 10px 0 0;
 }
 
+nav img {
+    filter: opactiy(100%);
+}
+
 header h1 {
     text-align: right;
     letter-spacing: 2pt;
@@ -57,6 +64,16 @@ header h1 {
     background-color: white;
     transition: color ease .5s;
     font-family: 'Bebas Neue', cursive;
+}
+
+#logo {
+    max-width:200;
+}
+
+footer img {
+    max-width:25px;
+    position: relative;
+    top: 8px;
 }
 
 header h1:hover {
@@ -123,7 +140,7 @@ section {
     align-items: right;
     margin: 20px 0 20px 0;
     border-radius: 16px;
-    border: 4px solid rgb(179, 179, 179);
+    /* border: 4px solid rgb(179, 179, 179); */
     display: flex;
     padding: 20px;
 }
@@ -205,13 +222,27 @@ a:link {
     position: relative;
 }
 
-img {
+.content img {
     /* This rule keeps the images from scaling when the screensize changes. It also uses an image filter to set the opacity at 30% unless the image is hovered. */
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: opacity(30%);
     transition: filter ease .5s;
+}
+
+.portfolio img {
+    /* This rule keeps the images from scaling when the screensize changes. It also uses an image filter to set the opacity at 30% unless the image is hovered. */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: opacity(30%);
+    transition: filter ease .5s;
+}
+
+nav img {
+    filter: opactiy(100%);
+    margin-left: 30px;
 }
 
 .wide-image:hover > img, .image:hover > img {
@@ -264,8 +295,75 @@ img {
     justify-content: space-between;
 }
 
-/* Footer holds a simple 'Made by' message */
+/* Resume section rules*/
 
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+#resume H1 {
+    font-family: 'montserrat', sans-serif;
+    font-size: 120%;
+    color: var(--dkGray);
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+}
+
+#resume h4 {
+    font-family: 'montserrat', sans-serif;
+    font-size: 70%;
+    text-transform: uppercase;
+    line-height: 200%;
+    letter-spacing: .05em;
+    color: var(--dkGray);
+    width: 100%;
+}
+
+#resume li {
+    border-bottom:none;
+    margin-left:0;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding:0;
+    display: block;
+    list-style: inside;
+    font-size: 90%;
+
+}
+
+#resume h1:first-child {
+    margin-top:0px;
+}
+
+.work {
+    list-style-type: circle;
+
+}
+
+#resume ol {
+    padding:0;
+    list-style: square !important;
+}
+
+#resume H3 {
+    font-family: 'georgia', serif;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 110%;
+    color: var(--dkGray);
+    font-size: 85%;
+    border-bottom: 20px;
+}
+
+#resume p {
+    margin-bottom: 0px;
+}
+
+
+
+/* Footer holds a simple 'Made by' message */
 footer {
     height: 100px;
 }
@@ -275,6 +373,10 @@ footer h4 {
     font-family: 'montserrat', sans-serif;
     font-size: 100%;
     color: var(--dkGray);
+}
+
+p {
+    overflow-wrap: normal;
 }
 
 
@@ -303,6 +405,7 @@ footer h4 {
 
     nav ul {
         margin: 20px;
+        margin-top: 0;
         width: 90%;
         padding: 10px;
     }
@@ -316,6 +419,17 @@ footer h4 {
         justify-content: space-between;
         padding: 20px 0 20px 0;
         margin: 0px;
+    }
+
+    #contain div {
+        margin-left: 0;
+        border: 1px solid red;
+    }
+
+    nav img {
+        /* margin-top: 20px; */
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .image {
@@ -359,6 +473,7 @@ footer h4 {
         white-space: nowrap;
         padding-left: 0;
         float:left;
+
     }
 
     section ul {
