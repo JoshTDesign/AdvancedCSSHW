@@ -21,24 +21,24 @@
                 <img src="./assets/Images/JT_Logo_horiz-01.svg" width="300px">
             </div>
             <ul>
-                <li><a href="#aboutMe">About Me</a></li>
+                <!-- <li><a href="#aboutMe">About Me</a></li> -->
                 <li><a href="#work">Work</a></li>
                 <li><a href="#contactMe">Contact Me</a></li>
                 <li><a href="#resume">Resume</a></li>
             </ul>
         </nav>
-        <h2>Front End Developer</h2>
-    </header>
+        <div id="aboutMe">
+            <p>Hello, nice to meet you! I am front-end developer and designer from Seattle, Washington. Check out my work, I would love to collaborate.<a href="github" target="blank">GitHub</a> and <a href="CodePen" target="blank">CodePen</a>.</p>
+            <img id="headshot" src="./assets/Images/PXL_20210511_234204670-website.png">
+
+        </div>
+        </header>
     
     <!-- Main contains all sections of content found in the nav bar -->
     <!-- Within each section, there is a 'title' div and 'content' div-->
     <main>
         
-        <!-- Beginning of the 'About Me' section  -->
-        <section id="aboutMe">
-            <div class="title"><h2>About Me</h2></div>
-            <div class="content"><p>I am an artist and designer from Seattle, Washington. With over fifteen years experience in branding and communication design, I am now setting my sights on full stack front-end development. Check me out on <a href="github" target="blank">GitHub</a> and <a href="CodePen" target="blank">CodePen</a>.</p></div>
-        </section>
+
         
         <!-- Beginning of the 'Work' section  -->
         <section id="work">
@@ -48,13 +48,23 @@
             <div class="content">
                 
                 <!-- Wrapping the entire image component in an 'a' tag allows the whole square to clickable as a link -->
-                <a href="https://github.com/JoshTDesign/group-project-1" target="_blank" class="wide-image">
+                <a href="https://github.com/JoshTDesign/Circle-Community-Bulletin" target="_blank" class="wide-image">
+                    <div class="label">
+                        <h3>Community Bulletin</h3>
+                        <!-- <a id="labela" href="https://oui-circle-app.herokuapp.com/" target="_blank">Deployed Site</a> -->
+                    </div>
+                
+                    <img src="./assets/Images/circle_portfolioImage.PNG" alt="project image" width="100%">
+                </a>
+
+                <a href="https://github.com/JoshTDesign/group-project-1" target="_blank" class="image">
                     <div class="label">
                         <h3>Paw ❤ Pair</h3>
-                        <p>You are unique</p> 
+                        <!-- <a href="https://github.com/AmandaNguyenn/group-project-1" target="_blank">Deployed Site</a>  -->
                     </div>
                     <img src="./assets/Images/bg-doggie.png" alt="project image" width="100%">
                 </a>
+
                 <a href="https://github.com/JoshTDesign/Flex-Day-Scheduler" target="_blank" class="image">
                     <div class="label">
                         <h3>Flex Schedule</h3>
@@ -62,6 +72,7 @@
                     </div>
                     <img src="./assets/Images/FlexSchedule.png" alt="project image" width="100%">
                 </a>
+
                 <a href="./StepOne.html" class="image">
                     <div class="label">
                         <h3>Step One Identity</h3>
@@ -69,6 +80,7 @@
                     </div>
                     <img src="./assets/Images/StepOne-Poster-Woman.png" alt="project image" width="100%">
                 </a>
+
                 <a href="./EmeraldCity.html" class="image">
                     <div class="label">
                         <h3>Emerald City Trolley</h3>
@@ -76,6 +88,7 @@
                     </div>
                     <img src="./assets/Images/EmeraldCityTrolley_Cover.png" alt="project image" width="100%">
                 </a>
+
                 <a href="./Gelato.html" class="image">
                     <div class="label">
                         <h3>'G' Gelato</h3>
@@ -94,57 +107,14 @@
             <div class="title"><h2>Resum&eacute;</h2></div>
                 <div class="content">
                     
-                    <h1>Skills</h1>
-                    <p>HTML, CSS, Javascript, Illustrator, Photoshop, Figma</p>
-                    <h1>Josh Taylor Design - Senior Designer</h1>
-                    <h3>October 2013 to Present</h4>
-                    <ol class="work" style="flex-direction:column;border-bottom: none, list-style-type: circle">
-                        <li>- Conceptualized restaurant brands for Holland America Line. Developed logos, 
-                            dining room signage, menus, products and advertising layouts.</li>
-                        <li>- Collaborated with a team of designers to refresh the Holland America Line brand 
-                            and implement new logos and brand standards.</li>
-                        <li>- Created sign packages and guidelines for Holland America Line. Worked with stakeholders and signage manufacturers to implement environmental signage on new ships.</li>
-                        <li>- Managed the production of stage graphics for AJC’s Annual Global Forum.</li>
-                        <li>- Created brand and vehicle wrap design for Emerald City Trolley.</li>
-                    </ul>
-                    <h1>Holland America Line - Manager, Onboard Media</h1>
-                    <h3>October 2006 to October 2013</h3>
-                    <ul style="flex-direction:column;border:none">
-                        <li>- Managed signage, print communication, and digital experience on board.</li>
-                        <li>- Implemented a fleetwide brand standard across all onboard media.</li>
-                        <li>- Created a dynamic port information publication. Oversaw the rollout for ports 
-                            across the world.</li>
-                    </ul>
-                    <h1>Education</h1>
-                    <h4>Bachelor of Arts, Design Production</h>
-                    <h3>Western Washington University - September 2000 to June 2003</h3>
+                  
 
                     <div>
-                        <br>
-                        <h1>Download my resume <a href="">here</a>.</h1>
+                        <h1>Download my resume <a href="./assets/Images/Josh Taylor Resume 2020.pdf">here</a>.</h1>
                     </div>
 
                 </div>
 
-            <!-- <div class="content">
-
-
-                    <h2>Holland America Line - Manager, Onboard Media</h2>
-                    <h3>October 2006 to October 2013</h3>
-                    <ul>
-                        <li>Managed signage, print communication, and digital experience on board.</li>
-                        <li>Implemented a fleetwide brand standard across all onboard media.</li>
-                        <li>Created a dynamic port information publication. Oversaw the rollout for ports 
-                            across the world.</li>
-                    </ul>
-
-                </div>
-                <div id="education"></div>
-                    <h1>Education</h1>
-                    <h2>Bachelor of Arts, Design Production</h2>
-                    <h3>Western Washington University - September 2000 to June 2003</h3>
-                </div>
-            </div> -->
         </section>
          <!-- Beginning of the 'Contact me' section  -->
          <section id="contactMe">
