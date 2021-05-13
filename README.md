@@ -1,4 +1,4 @@
-# AdvancedCSSHW\
+# Portfolio Website\
 
 ## CSS Portfolio Site HW
 This is my portfolio page for my current projects as a developer. All projects have a placeholder image and currently link to my assignment repository on GitHub, as I progress I hope to add real deployed projects that I can link to.
