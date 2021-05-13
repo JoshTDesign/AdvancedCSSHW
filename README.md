@@ -24,6 +24,6 @@ My goal was to have a well made HTML and CSS based portfolio page with responsiv
 https://drive.google.com/file/d/12U5Dh5sza1GsrWVT4CaK0TtcO1xREwdb/view?usp=sharing
 
 ### Link to deployed project
-https://joshtdesign.github.io/AdvancedCSSHW/
+https://joshtdesign.github.io/Portfolio/
 
 ### Thanks for reading ;)
